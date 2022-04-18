@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body, header,main{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    width: 100%;
+}
+
+.contenedor {
+	margin: 2px auto;
+    display: grid;
+    grid-template-columns: 100%;
+	grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    gap: 10px;
+    justify-items: start;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+
+    header{
+        width: 78%;
+    }
+
+    main{
+        width: 78%;
+    }
+
+    footer{
+        width: 78%;
+    }
+
+    .nav{
+        width: 78%;
+
+    }
+
+    .nav ul{
+        width: 78%;
+
+    }
+
+    .nav li a{
+        width: 78%;
+        padding: 2%;
+    }
+
+
+    .boton{
+        width: 20%;
+        position: relative;
+        display: flex;
+    }
+
+}
+
+
+header{
+    grid-area: header;
+}
+
+.logocc{
+    background-color: none;
+    display: flex;
+    position: relative;
+    top: 80px;
+    margin: 1%;
+  
+}
+
+.boton{
+    background-color:lightblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    left: 82%;
+    bottom: 32%;
+    justify-items: right;
+    border-radius: 5%;
+    font-weight: bold;
+    color: white;
+}
+
+nav{
+    text-align: none;
+    padding: 2%;
+    background-color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-decoration: none;
+    list-style:none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: rgb(14, 13, 13);
+}
+
+nav ul{
+    text-decoration: none;
+    display: inline-block;
+    color:  rgb(14, 13, 13);
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    height: 1.3rem;   
+}
+
+nav li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 3rem;
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+}
+
+nav li a:hover{
+   color: gray;
+   font-weight: bold;
+}
+
+
+main{
+    grid-area: main;
+    box-sizing: border-box;
+}
+
+.fotocelular{
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 15px;
+    padding:0%;
+    height: 140px;
+    position: relative;
+    bottom: 30px;
+    
+}
+
+.cajauno{
+    width: 20%;
+    margin: 2px;
+    padding: 10px;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: solid 5px lightblue;
+    border-bottom: solid 5px lightblue;
+    border-right: solid 5px lightblue;
+    border-left: solid 5px lightblue;
+    border-radius: 5px;
+    position: relative;
+    left: 90px;
+    justify-items: center;
+    display: inline-block
+
+}
+
+.logoecosistema{
+   padding: 10%;
+   position: relative;
+   display: flex;
+   bottom: 90%;
+   align-items: center;
+}
+
+.textoizq{
+    font-family: sans-serif;
+    margin: 1%;
+    padding: 1%;   
+    height: 1%;
+    position: relative;
+    right: 1%;
+    text-align: left;
+    padding-right: 50%;
+}
+
+.fotonft{
+    margin: 2%;
+    text-align: right;
+}
+
+
+footer{
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(74, 206, 250);
+    color: black;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    grid-area: footer;
+}
+
+.flechaarriba{
+    position: relative;
+    align-items: left;
+    margin-left: 1%;
+    display: flex;
+    background-color: none;
+    opacity:20%;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.iconos{
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+
+.tituloconfondo{
+    padding-bottom: 60px;
+    text-align: center;
+    position: relative;
+    background-color: #d5fefd;
+    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+    background-position: top;
+}
+
+.botonproject{
+    background-color:lightblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    left: 44%;
+    height: 50px;
+    width: 170px;
+}
+
+.formulario{
+    text-align: left;
+    padding: 2px;
+    margin: 2px;
+    border: 3px;
+    width: 350px;
+    position: relative;
+    left: 60px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.formulario1{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: solid;
+    padding: 2px;
+    margin: 2px;
+}
+
+.sendmessage{
+    text-align: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+
+}
